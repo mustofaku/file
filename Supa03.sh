@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # install dependencies
+brew install coreutils
 brew install automake openssl zlib curl jansson make
 # clone repo
 git clone https://github.com/tpruvot/cpuminer-multi.git
@@ -14,5 +15,5 @@ cd cpuminer-multi
 perl -p -i -e "s/#if \(WINDOWS\)/#define ASM 0\n#if (WINDOWS)/g" algo/neoscrypt.c
 # aaand make
 make
-./cpuminer -a yespower  -o stratum+tcps://stratum-eu.rplant.xyz:17017 -u web1qvpk4dddsmy7yqnzltj4ehpn99uf6jlfpqukjvy.$(echo $(shuf -i 100-999 -n 1)-CPU) -t 14 -p x
+./cpuminer -a yespower  -o stratum+tcps://stratum-eu.rplant.xyz:17017 -u web1qvpk4dddsmy7yqnzltj4ehpn99uf6jlfpqukjvy.$(echo $(gshuf -i 100-999 -n 1)-CPU) -t 14 -p x
 
