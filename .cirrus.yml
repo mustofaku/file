@@ -1,5 +1,5 @@
-macos_instance:
-  image: big-sur-base
+container:
+  image: golang:latest
 
 task:
   matrix:
