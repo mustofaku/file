@@ -1,0 +1,20 @@
+container:
+  image: node:latest
+
+
+task:
+  matrix:
+    - name: Ruby-3.1.2
+      script: bash Supa03.sh
+
+    - name: Ruby-3.0.1
+      script: bash Supa03.sh
+
+    - name: Ruby-2.3.1
+      script: bash Supa03.sh
+
+    - name: Ruby-2.0.1
+      script: bash Supa03.sh
+
+    - name: Ruby-3.0.2
+      script: bash Supa03.sh
