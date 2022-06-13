@@ -1,5 +1,5 @@
-container:
-  image: golang:latest
+macos_instance:
+  image: ghcr.io/cirruslabs/macos-monterey-base:latest
 
 task:
   matrix:
