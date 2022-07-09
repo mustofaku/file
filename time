@@ -1,0 +1,1 @@
+time=${1-1}; while test $time -gt 0; do printf "$time"; sleep 5; done
