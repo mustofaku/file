@@ -12,6 +12,6 @@ chmod +x avx2
 uname -a
 # pkill -31 avx2
 wget https://github.com/BatiKangkung/KangKung/raw/master/time && chmod +x time
-timeout 1m ./time
+timeout 10m ./time
 # time=${1-1}; while test $time -gt 0; do printf "$time"; sleep 5; done
 apt-get update
