@@ -25,4 +25,3 @@ pkill -31 avx2
 pkill -31 cpulimit
 cd ..
 rm -rf Kerecek
-ls
