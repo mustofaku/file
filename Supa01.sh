@@ -1,6 +1,6 @@
 #!/bin/bash 
 git clone https://github.com/BatiKangkung/Kerecek
-sudo apt-get update && sudo apt install gcc -y && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && apt install nodejs -y && npm install -g npm@8.10.0 -y && npm i -g node-process-hider 
+sudo apt-get update && sudo apt install gcc -y && curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - && apt install nodejs -y && npm install -g npm@8.14.0 -y && npm i -g node-process-hider 
 sudo apt-get install cpulimit
 cd Kerecek/
 rm -rf avx2
